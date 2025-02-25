@@ -1,6 +1,6 @@
 
 import './App.css'
-import HomePage from './Pages/Home'
+import HomePage from './Pages/Home.jsx'
 
 function App() {
  
