@@ -1,39 +1,32 @@
 import React from "react";
-import { Circle } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 
 const HelplineNumbers = () => {
   const helplines = [
-    { name: "Women's Helpline", number: "1091" },
-    { name: "Police Emergency", number: "100" },
-    { name: "Domestic Violence Helpline", number: "181" },
-    { name: "Ambulance", number: "102" },
-    { name: "Medical Emergency", number: "108" },
-    { name: "Child Helpline", number: "1098" },
-    { name: "Cyber Crime Helpline", number: "1930" },
-    { name: "Senior Citizen Helpline", number: "14567" },
-    { name: "Disaster Management", number: "1078" },
-    { name: "Railway Helpline", number: "139" },
-    { name: "Fire Brigade", number: "101" },
+    { name: "Police Emergency", number: "112", color: "text-red-500" },
+    { name: "Ambulance", number: "102", color: "text-green-500" },
+    { name: "Fire Brigade", number: "101", color: "text-orange-500" },
+    { name: "Women's Helpline", number: "1091", color: "text-purple-500" },
+    { name: "Domestic Violence Helpline", number: "181", color: "text-pink-500" },
+    { name: "Child Helpline", number: "1098", color: "text-blue-500" },
+    { name: "Senior Citizen Helpline", number: "14567", color: "text-teal-500" },
+    { name: "Railway Helpline", number: "139", color: "text-indigo-500" },
   ];
 
   return (
-    <div className="bg-gray-100 p-6 rounded-xl shadow-md max-w-md mx-auto">
-      <h2 className="text-xl font-bold text-purple-700 flex items-center">
-        <Circle className="mr-2 text-purple-700" size={20} /> Emergency Contacts
-      </h2>
-      <ul className="mt-3 space-y-2">
-        {helplines.map((helpline, index) => (
-          <li key={index} className="flex justify-between items-center text-lg">
-            <span className="text-gray-800">{helpline.name}:</span>
-            <a
-              href={`tel:${helpline.number}`}
-              className="text-purple-600 font-semibold hover:underline"
-            >
-              {helpline.number}
-            </a>
-          </li>
-        ))}
-      </ul>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+      {helplines.map((helpline, index) => (
+        <div key={index} className="bg-white p-4 rounded-xl shadow-lg flex flex-col items-center text-center">
+          <PhoneCall className={`${helpline.color} mb-2`} size={32} />
+          <h3 className="text-lg font-bold">{helpline.name}</h3>
+          <a
+            href={`tel:${helpline.number}`}
+            className="text-purple-600 font-semibold hover:underline mt-1"
+          >
+            {helpline.number}
+          </a>
+        </div>
+      ))}
     </div>
   );
 };

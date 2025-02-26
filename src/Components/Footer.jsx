@@ -4,7 +4,7 @@ import { Shield, Heart } from 'lucide-react';
 const Footer = () => {
   return (
     <footer className="bg-purple-800 text-white">
-      <div className="max-w-7xl mx-auto px-4 py-8">
+      <div className="max-w-7xl mx-auto px-2 py-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-purple-700 mt-8 pt-8 flex items-center justify-center text-purple-200">
+        <div className="border-t border-purple-700 mt-5 pt-4 flex items-center justify-center text-purple-200">
           <p className="flex items-center">
             Made with <Heart className="h-4 w-4 mx-1 text-red-400" /> for women's safety
           </p>

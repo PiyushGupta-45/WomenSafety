@@ -1,6 +1,6 @@
 import React from 'react';
 import { Shield, AlertCircle, Phone, Map } from 'lucide-react';
-import HelplineNumbers from '../Components/Helpline';
+import { NavLink } from 'react-router-dom';
 
 const Prevention = () => {
   return (
@@ -25,8 +25,6 @@ const Prevention = () => {
             <ResourceCard key={index} icon={resource.icon} title={resource.title} description={resource.description} link={resource.link} />
           ))}
         </div>
-        <HelplineNumbers/>
-
       </div>
 
       <div className="bg-white rounded-lg shadow-lg p-8">
@@ -65,14 +63,13 @@ const ResourceCard = ({ icon, title, description, link }) => (
       <h3 className="font-semibold ml-2">{title}</h3>
     </div>
     <p className="text-gray-600 mb-4">{description}</p>
-    <a
-      href={link}
+    <NavLink
+      to={link}
       className="text-purple-600 hover:text-purple-800 font-medium"
-      target="_blank"
       rel="noopener noreferrer"
     >
       Learn More →
-    </a>
+    </NavLink>
   </div>
 );
 
@@ -131,7 +128,7 @@ const emergencyResources = [
     icon: <Phone className="h-6 w-6 text-red-500" />, 
     title: "Emergency Helpline", 
     description: "24/7 women's safety helpline for immediate assistance", 
-    link: "#"
+    link: "/helpline"
   },
   {
     icon: <Map className="h-6 w-6 text-blue-500" />, 
