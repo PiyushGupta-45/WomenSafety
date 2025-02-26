@@ -31,8 +31,7 @@ const Navbar = () => {
         <Search className="absolute top-2 right-2 text-gray-400" size={20} />
       </div>
 
-      {/* Right Side (Emergency, Safety Check, Location Sharing, Alerts, Dark Mode, Profile) */}
-      <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4">
         <button className="p-2 bg-red-500 hover:bg-red-600 rounded-lg" title="Emergency Contact">
           <Phone size={24} />
         </button>
