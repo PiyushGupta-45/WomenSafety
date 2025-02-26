@@ -36,7 +36,7 @@ const Prevention = () => {
             <ChecklistItem key={index} title={item.title} items={item.items} />
           ))}
         </div>
-        <LegalRights />
+        
       </div>
     </div>
   );
@@ -143,7 +143,7 @@ const emergencyResources = [
     icon: <Shield className="h-6 w-6 text-green-500" />, 
     title: "Support Groups", 
     description: "Connect with local women's support groups", 
-    link: "/"
+    link: "/legal"
   }
 ];
 
