@@ -142,7 +142,7 @@ const emergencyResources = [
     icon: <Shield className="h-6 w-6 text-green-500" />, 
     title: "Support Groups", 
     description: "Connect with local women's support groups", 
-    link: "#"
+    link: "/"
   }
 ];
 
