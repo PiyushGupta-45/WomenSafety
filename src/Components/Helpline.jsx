@@ -14,7 +14,7 @@ const HelplineNumbers = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 mt-15 mb-2">
       {helplines.map((helpline, index) => (
         <div key={index} className="bg-white p-4 rounded-xl shadow-lg flex flex-col items-center text-center">
           <PhoneCall className={`${helpline.color} mb-2`} size={32} />
