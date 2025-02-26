@@ -1,22 +1,16 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Layout from './Components/Layout'; // Make sure Layout is defined
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import HomePage from './Pages/Home';
+import Layout from './Layout';
 
 const router = createBrowserRouter(
-  [
-    {
-      path: '/',
-      element: <Layout />, // Ensure Layout is correctly imported
-      children: [
-        {
-          path: '/',
-          element: <HomePage />
-        }
-      ]
-    }
-  ]
-);
+  createRoutesFromElements(
+    <Route path='/' element={<Layout/>}>
+      <Route path='' element={<HomePage/>}/>
+      
+    </Route>
+  )
+)
 
 function App() {
   return (

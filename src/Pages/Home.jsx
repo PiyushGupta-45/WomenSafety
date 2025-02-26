@@ -1,11 +1,9 @@
 import React from "react";
 import { Camera, Users, Navigation, Bell, Shield, Phone } from "lucide-react"; // Import additional icons
-import Navbar from "../Components/NavBar.jsx"; // Ensure this component exists in your project
 
 const HomePage = () => {
   return (
     <>
-      <Navbar />
       <div className="min-h-screen bg-gray-50 flex flex-col">
         {/* Hero Section */}
         <div className="w-full bg-purple-900 text-white py-16 px-6">

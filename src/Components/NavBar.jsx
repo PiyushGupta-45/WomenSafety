@@ -2,12 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Search, Shield, AlertCircle, MapPin, Bell,  Phone } from "lucide-react";
 
 const Navbar = () => {
- 
-
-
-
-
-
   return (
     <nav className="flex items-center justify-between px-6 py-4 bg-purple-900 text-white dark:bg-black shadow-lg">
       {/* Logo */}
