@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Search, Shield, AlertCircle, MapPin, Bell,  Phone } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between px-6 py-4 bg-purple-900 text-white dark:bg-black shadow-lg">
+    <nav className="fixed top-0 left-0 w-full bg-black text-white py-4 px-6 flex justify-between items-center z-50">
+
       {/* Logo */}
       <div className="flex items-center gap-2">
         <Shield size={32} className="text-pink-400" />
@@ -12,10 +14,11 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <div className="hidden md:flex gap-6 text-lg">
-        <a href="/" className="hover:text-pink-400 transition">Home</a>
-        <a href="/resources" className="hover:text-pink-400 transition">Resources</a>
-        <a href="/safe-locations" className="hover:text-pink-400 transition">Safe Zones</a>
-        <a href="/community" className="hover:text-pink-400 transition">Community</a>
+        <NavLink to="/" className="hover:text-pink-400 transition">Home</NavLink>
+        <NavLink to="/resources" className="hover:text-pink-400 transition">Resources</NavLink>
+        <NavLink to="/safe-locations" className="hover:text-pink-400 transition">Safe Zones</NavLink>
+        <NavLink to="/community" className="hover:text-pink-400 transition">Community</NavLink>
+        <NavLink to="/contact" className="hover:text-pink-400 transition">Contact US</NavLink>
       </div>
 
       {/* Search Bar */}

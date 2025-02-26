@@ -1,1 +1,23 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+    @apply bg-white text-black transition-colors duration-300;
+  }
+  
+  /* Dark Mode */
+  .dark body {
+    @apply bg-neutral-950 text-gray-200; /* Lighter text for better readability */
+  }
+  
+  .dark .card {
+    @apply bg-neutral-800 text-white border-gray-700; /* Make cards readable */
+  }
+  
+  .dark button {
+    @apply bg-blue-500 hover:bg-blue-400 text-white; /* Improve button visibility */
+  }
+  
+  .dark .box {
+    @apply bg-neutral-700 border-gray-600; /* Darken boxes slightly */
+  }
