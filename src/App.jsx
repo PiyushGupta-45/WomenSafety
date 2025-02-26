@@ -6,7 +6,7 @@ import Contact from './Pages/Contact';
 import Resources from './Pages/Resources';
 import SafeZones from './Pages/SafeZones';
 import HelplineNumbers from './Components/Helpline';
-import LegalRights from './Components/Legal';
+import Legal from './Components/Legal';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,7 +17,7 @@ const router = createBrowserRouter(
       <Route path='/safe-locations' element={<SafeZones/>}/>
       <Route path='/helpline' element={<HelplineNumbers/>}/>
 
-       <Route path='/legal' element={<LegalRights/>}/>
+       <Route path='/legal' element={<Legal/>}/>
     </Route>
   )
 )
