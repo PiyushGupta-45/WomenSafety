@@ -34,7 +34,7 @@ const resources = [
 
 const Resources = () => {
   return (
-    <div className="min-h-screen bg-purple-900 p-10 text-white">
+    <div className="min-h-screen bg-gradient-to-r from-purple-700 to-indigo-700 p-10 text-white">
       <div className="max-w-5xl mx-auto bg-white p-10 rounded-3xl shadow-2xl text-gray-900">
         <h1 className="text-5xl font-bold text-center text-purple-800 mb-10">Safety Resources</h1>
         <div className="grid md:grid-cols-2 gap-8">
