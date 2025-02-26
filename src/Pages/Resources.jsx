@@ -1,7 +1,6 @@
 import React from 'react';
 import { Shield, AlertCircle, Phone, Map } from 'lucide-react';
-
-
+import LegalRights from '../Components/Legal';
 import { NavLink } from 'react-router-dom';
 
 const Prevention = () => {
