@@ -1,38 +1,44 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Shield, Heart } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bottom-0 left-0 w-full bg-gray-800 text-white text-center py-3">
-      <div className="container mx-auto">
-        <p className="text-sm">
-          © 2025 Women Safety. All Rights Reserved.
-        </p>
-        <div className="flex justify-center mt-4 space-x-6">
-          <Link
-            to="/privacy-policy"
-            className="text-gray-400 hover:text-white"
-          >
-            Privacy Policy
-          </Link>
-          <Link
-            to="/terms"
-            className="text-gray-400 hover:text-white"
-          >
-            Terms & Conditions
-          </Link>
-          <Link
-            to="/about"
-            className="text-gray-400 hover:text-white"
-          >
-            About Us
-          </Link>
-          <Link
-            to="/contact"
-            className="text-gray-400 hover:text-white"
-          >
-            Contact Us
-          </Link>
+    <footer className="bg-purple-800 text-white">
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="grid md:grid-cols-3 gap-8">
+          <div>
+            <div className="flex items-center space-x-2 mb-4">
+              <Shield className="h-6 w-6" />
+              <span className="font-bold text-xl">SafeGuardian</span>
+            </div>
+            <p className="text-purple-200">
+              Empowering women with safety tools and resources for a secure tomorrow.
+            </p>
+          </div>
+          
+          <div>
+            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-purple-200">
+              <li><a href="/dashboard" className="hover:text-white">Dashboard</a></li>
+              <li><a href="/prevention" className="hover:text-white">Safety Tips</a></li>
+              <li><a href="/sos" className="hover:text-white">Emergency SOS</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-semibold mb-4">Emergency Contacts</h3>
+            <ul className="space-y-2 text-purple-200">
+              <li>Women Helpline: 1091</li>
+              <li>Police: 100</li>
+              <li>Ambulance: 102</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="border-t border-purple-700 mt-8 pt-8 flex items-center justify-center text-purple-200">
+          <p className="flex items-center">
+            Made with <Heart className="h-4 w-4 mx-1 text-red-400" /> for women's safety
+          </p>
         </div>
       </div>
     </footer>
