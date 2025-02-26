@@ -76,7 +76,7 @@ const ResourceCard = ({ icon, title, description, link }) => (
   </div>
 );
 
-const ChecklistItem = ({ title, items }) => (
+const ChecklistItem = ({ title,  items }) => (
   <div>
     <h3 className="font-semibold mb-3">{title}</h3>
     <ul className="space-y-2">
