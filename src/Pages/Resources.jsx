@@ -1,11 +1,7 @@
 import React from 'react';
 import { Shield, AlertCircle, Phone, Map } from 'lucide-react';
-<<<<<<< HEAD
-import HelplineNumbers from '../Components/Helpline';
 import LegalRights from '../Components/Legal';
-=======
 import { NavLink } from 'react-router-dom';
->>>>>>> e2dacc50ce81a9c8de82c7e31780620f02627b64
 
 const Prevention = () => {
   return (
