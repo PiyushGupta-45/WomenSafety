@@ -1,6 +1,7 @@
 import React from 'react';
 import { Shield, AlertCircle, Phone, Map } from 'lucide-react';
 import HelplineNumbers from '../Components/Helpline';
+import LegalRights from '../Components/Legal';
 
 const Prevention = () => {
   return (
@@ -36,6 +37,7 @@ const Prevention = () => {
             <ChecklistItem key={index} title={item.title} items={item.items} />
           ))}
         </div>
+        <LegalRights />
       </div>
     </div>
   );
