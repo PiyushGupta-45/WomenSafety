@@ -3,26 +3,14 @@ import sos from "../Images/sos.jpeg";
 
 const Sos = () => {
   return (
-    <button style={styles.container}>
-      <img src={sos} alt="sos" style={styles.image} />
+    <button className="fixed bottom-5 right-5 z-50">
+      <img
+        src={sos}
+        alt="SOS"
+        className="w-16 h-16 rounded-full shadow-lg cursor-pointer transition-transform duration-200 hover:scale-110 hover:shadow-red-500"
+      />
     </button>
   );
-};
-
-const styles = {
-  container: {
-    position: "fixed",
-    bottom: "20px",
-    right: "20px",
-    zIndex: 1000,
-  },
-  image: {
-    width: "60px", // Adjust size if needed
-    height: "60px",
-    borderRadius: "50%",
-    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
-    cursor: "pointer",
-  },
 };
 
 export default Sos;
