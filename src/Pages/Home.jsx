@@ -6,7 +6,7 @@ const HomePage = () => {
     <>
       <div className="min-h-screen bg-gray-50 flex flex-col">
         {/* Hero Section */}
-        <div className="w-full bg-purple-900 text-white py-16 px-6">
+        <div className="w-full bg-gradient-to-r from-purple-700 to-indigo-700 text-white py-16 px-6">
           <div className="max-w-6xl mx-auto">
             <h1 className="text-4xl font-bold mb-4">Your Safety Companion</h1>
             <p className="text-xl mb-8">Advanced protection and peace of mind, wherever you go</p>

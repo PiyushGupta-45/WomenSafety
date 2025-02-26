@@ -4,6 +4,7 @@ import HomePage from './Pages/Home';
 import Layout from './Layout';
 import Contact from './Pages/Contact';
 import Resources from './Pages/Resources';
+import SafeZones from './Pages/SafeZones';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -11,6 +12,7 @@ const router = createBrowserRouter(
       <Route path='' element={<HomePage/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/resources' element={<Resources/>}/>
+      <Route path='/safe-locations' element={<SafeZones/>}/>
       
     </Route>
   )

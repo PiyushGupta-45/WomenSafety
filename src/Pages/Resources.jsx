@@ -3,31 +3,9 @@ import { Shield, AlertCircle, Phone, Map } from 'lucide-react';
 
 const Prevention = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Safety Prevention Guide</h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Knowledge and preparation are key to personal safety. Review these guidelines and tips to stay protected.
-        </p>
-      </div>
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-        {safetyTips.map((tip, index) => (
-          <SafetyTipCard key={index} icon={tip.icon} title={tip.title} tips={tip.tips} />
-        ))}
-      </div>
-
-      <div className="bg-purple-50 rounded-lg p-8 mb-12">
-        <h2 className="text-2xl font-bold mb-6">Emergency Resources</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {emergencyResources.map((resource, index) => (
-            <ResourceCard key={index} icon={resource.icon} title={resource.title} description={resource.description} link={resource.link} />
-          ))}
-        </div>
-      </div>
-
-      <div className="bg-white rounded-lg shadow-lg p-8">
-        <h2 className="text-2xl font-bold mb-6">Safety Checklist</h2>
+    <div className="min-h-screen bg-purple-900 p-10 text-white">
+      <div className="max-w-5xl mx-auto bg-white p-10 rounded-3xl shadow-2xl text-gray-900">
+        <h1 className="text-5xl font-bold text-center text-purple-800 mb-10">Safety Resources</h1>
         <div className="grid md:grid-cols-2 gap-8">
           {safetyChecklist.map((item, index) => (
             <ChecklistItem key={index} title={item.title} items={item.items} />
