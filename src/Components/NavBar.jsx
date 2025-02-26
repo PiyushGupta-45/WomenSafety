@@ -16,7 +16,6 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <div className="hidden md:flex gap-6 text-lg">
-       <NavLink to="/" className="hover:text-pink-400 transition">Home</NavLink>
         <NavLink to="/resources" className="hover:text-pink-400 transition">Resources</NavLink>
         <NavLink to="/safe-locations" className="hover:text-pink-400 transition">Safe Zones</NavLink>
         <NavLink to="/community" className="hover:text-pink-400 transition">Community</NavLink>
