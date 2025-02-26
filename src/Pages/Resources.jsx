@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, AlertCircle, Phone, Map } from 'lucide-react';
+import HelplineNumbers from '../Components/Helpline';
 
 const Prevention = () => {
   return (
@@ -24,6 +25,8 @@ const Prevention = () => {
             <ResourceCard key={index} icon={resource.icon} title={resource.title} description={resource.description} link={resource.link} />
           ))}
         </div>
+        <HelplineNumbers/>
+
       </div>
 
       <div className="bg-white rounded-lg shadow-lg p-8">
