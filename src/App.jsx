@@ -7,6 +7,7 @@ import Resources from './Pages/Resources';
 import SafeZones from './Pages/SafeZones';
 import HelplineNumbers from './Components/Helpline';
 import Legal from './Components/Legal';
+import Signin from './Pages/Signin';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,8 +17,8 @@ const router = createBrowserRouter(
       <Route path='/resources' element={<Resources/>}/>
       <Route path='/safe-locations' element={<SafeZones/>}/>
       <Route path='/helpline' element={<HelplineNumbers/>}/>
-
-       <Route path='/legal' element={<Legal/>}/>
+      <Route path='/signin' element={<Signin/>}/>
+      <Route path='/legal' element={<Legal/>}/>
     </Route>
   )
 )
